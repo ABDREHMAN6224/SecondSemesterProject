@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/comments"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/notification_profile"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_profile"
+        app:civ_border_color="#CD0A0A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameOfProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="AbdulRehman"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/notification_profile"
+        app:layout_constraintStart_toEndOf="@id/notification_profile"
+        app:layout_constraintTop_toTopOf="@+id/notification_profile"
+        app:layout_constraintVertical_bias="0.23000002" />
+
+    <TextView
+        android:id="@+id/aboutName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="About"
+        app:layout_constraintEnd_toEndOf="@+id/nameOfProfile"
+        app:layout_constraintStart_toStartOf="@+id/nameOfProfile"
+        app:layout_constraintTop_toBottomOf="@+id/nameOfProfile" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/postImage"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_150mdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutName"
+        app:riv_corner_radius="15dip"
+        app:riv_mutate_background="true"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/postDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postImage" />
+
+    <TextView
+        android:id="@+id/noOfLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_heart_not_clicked"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/noOfComments"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postDescription" />
+
+    <TextView
+        android:id="@+id/noOfComments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_comment"
+        android:drawablePadding="@dimen/_10mdp"
+        android:gravity="center"
+        android:text="23"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/noOfLikes"
+        app:layout_constraintTop_toBottomOf="@+id/postDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

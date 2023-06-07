@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">application</string>
+    <string name="home">home</string>
+    <string name="notification">Notification</string>
+    <string name="add">add</string>
+    <string name="search">search</string>
+    <string name="profile">profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="scroll_it">scroll it</string>
+    <string name="explore">Explore</string>
+    <string name="create_story">create Story</string>
+    <string name="abdulrehman">AbdulRehman</string>
+</resources>
